@@ -2,7 +2,8 @@ import java.util.Locale;
 import java.util.Scanner;
 public class ContaTerminal{
     public static void main(String[] args) throws Exception {
-        //TODO: Conhecer e importar a classe Scanner.
+        //SupressWarning adicionado para retirar o alerta sobre o scanner.
+        @SuppressWarnings("resource")
         Scanner scanner = new Scanner(System.in).useLocale(Locale.forLanguageTag("pt-BR"));
         //Exibir as mensagens para o nosso usuário.
                 //Obter pelo scanner os valores digitados no terminal.
